@@ -1,0 +1,37 @@
+{
+  "name": "notewepmern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Backend/index.js",
+    "client": "npm start --prefix fontend",
+    "dev": "concurrently \"npm start\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix fontend && npm run build --prefix fontend"
+  },
+  "author": "sumit kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.7",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-jwt": "^6.1.0",
+    "express-validator": "^6.13.0",
+    "google-auth-library": "^7.10.1",
+    "googleapis": "^88.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "loadash": "^1.0.0",
+    "mailgun-js": "^0.22.0",
+    "mongoose": "^5.13.5",
+    "node-fetch": "^2.6.5",
+    "nodemailer": "^6.6.5",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.12"
+  }
+}

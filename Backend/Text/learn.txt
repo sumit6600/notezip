@@ -1,0 +1,42 @@
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+//api end point is used tp fetch the data from the database.
+
+// Simple api to get data with the help of file system
+
+// app.get("/listUsers", function (req, res) {
+//   fs.readFile(__dirname + "/" + "user.json", "utf8", function (err, data) {
+//     const users = JSON.parse(data);
+//     const user = users["user" + req.params.id];
+
+//     console.log(user);
+//     res.end(JSON.stringify(user));
+//   });
+// });
+
+// app.get("/api/chats", (req, res) => {
+//   res.send(chats);
+// });
+
+// app.get("/api/chat/:id", chatApi);
+
+// const chatApi = (req, res) => {
+//   console.log(req.params.id);
+//   const singlechat = chats.find((c) => {
+//     c._id === req.params.id;
+//   });
+//   res.send(singlechat);
+// };
